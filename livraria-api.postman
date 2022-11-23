@@ -1,0 +1,949 @@
+{
+	"info": {
+		"_postman_id": "95f31763-2058-45b1-8c2b-63b5b8e9e163",
+		"name": "livraria-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "localhost:3000/cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Teste\",\r\n    \"email\": \"teste@teste.com\",\r\n    \"senha\": \"1234\",\r\n    \"telefone\": \"31123456789\",\r\n    \"endereco\": \"Rua Teste\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/cliente",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/cliente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cliente_id\": 34,\r\n    \"nome\": \"Teste 1\",\r\n    \"email\": \"teste1@teste1.com\",\r\n    \"senha\": \"12345\",\r\n    \"telefone\": \"3112345678\",\r\n    \"endereco\": \"Rua Teste 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/cliente",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/cliente/9",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/cliente/9",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cliente",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/cliente",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/cliente",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/cliente/34",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/cliente/34",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cliente",
+								"34"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Autor",
+			"item": [
+				{
+					"name": "localhost:3000/autor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Teste\",\r\n    \"email\": \"teste@teste.com\",\r\n    \"telefone\": \"31123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/autor",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"autor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/autor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"autor_id\": 35,\r\n    \"nome\": \"Teste 1\",\r\n    \"email\": \"teste1@teste1.com\",\r\n    \"telefone\": \"3112345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/autor",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"autor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/autor/6",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/autor/6",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"autor",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/autor",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/autor",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"autor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/autor/35",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/autor/35",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"autor",
+								"35"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LIvro",
+			"item": [
+				{
+					"name": "localhost:3000/livro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Teste\",\r\n    \"valor\": 10.5,\r\n    \"estoque\": 100,\r\n    \"autor_id\": 35\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/livro",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/livro",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"livro_id\": 34,\r\n    \"nome\": \"Teste 1\",\r\n    \"valor\": 10.15,\r\n    \"estoque\": 100,\r\n    \"autor_id\": 35\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/livro",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/livro",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/livro/7",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livro",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/livro",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/livro",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/livro?autor_id=1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/livro?autor_id=35",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livro"
+							],
+							"query": [
+								{
+									"key": "autor_id",
+									"value": "35"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/livro/1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/livro/34",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livro",
+								"34"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LivroInfo",
+			"item": [
+				{
+					"name": "localhost:3000/livroinfo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"livro_id\": \"34\",\r\n    \"descricao\": \"teste 2\",\r\n    \"paginas\": \"200\",\r\n    \"editora\": \"teste 2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/livroinfo",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livroinfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/livro/info",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"livro_id\": \"34\",\r\n    \"descricao\": \"teste 3\",\r\n    \"paginas\": \"300\",\r\n    \"editora\": \"teste 3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/livroinfo",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livroinfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/livro/info",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/livroinfo/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livroinfo",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/livro/info",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/livroinfo",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livroinfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/livro/info1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/livroinfo/34",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livroinfo",
+								"34"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/livro/info/avaliacao",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"livro_id\": \"34\",\r\n    \"nome\": \"Teste\",\r\n    \"nota\": \"10\",\r\n    \"avaliacao\": \"Teste\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/livroinfo/avaliacao",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livroinfo",
+								"avaliacao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/livro/info/avaliacao",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/livroinfo/1/avaliacao/0",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livroinfo",
+								"1",
+								"avaliacao",
+								"0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Venda",
+			"item": [
+				{
+					"name": "localhost:3000/venda",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": \"2022-01-01\",\r\n    \"cliente_id\": 34,\r\n    \"livro_id\": 34\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/venda",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"venda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/venda/1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/venda/6",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"venda",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/venda",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/venda",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"venda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/venda?cliente_id=1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/venda?cliente_id=34",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"venda"
+							],
+							"query": [
+								{
+									"key": "cliente_id",
+									"value": "34"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/venda?livro_id=1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/venda?livro_id=34",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"venda"
+							],
+							"query": [
+								{
+									"key": "livro_id",
+									"value": "34"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/venda?autor_id=1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/venda?autor_id=35",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"venda"
+							],
+							"query": [
+								{
+									"key": "autor_id",
+									"value": "35"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "localhost:3000/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "desafio-igti-nodejs",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "admin",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
